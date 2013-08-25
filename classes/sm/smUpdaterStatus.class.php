@@ -291,6 +291,9 @@ class smUpdaterStatus extends smCore {
 			case 'inetworx':
 				$sms = new txtmsgInetworx();
 			break;
+            case 'mosms':
+                $sms = new txtmsgMosms();
+                break;
 			case 'mollie':
 				$sms = new txtmsgMollie();
 				$sms->setGateway(1);

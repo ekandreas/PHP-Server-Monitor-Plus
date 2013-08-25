@@ -197,6 +197,10 @@ class modServers extends modCore {
 			} else {
 				// add
 				$clean['status'] = 'on';
+                $clean['error'] = '';
+                $clean['rtime'] = '0';
+                $clean['last_online'] = '1970-01-01';
+                $clean['last_check'] = '1970-01-01';
 				$this->db->save(SM_DB_PREFIX.'servers', $clean);
 				$this->message = sm_get_lang('servers', 'inserted');
 			}
